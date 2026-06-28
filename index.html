@@ -1,107 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Tasty Bites Restaurant</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #fff8dc;
-        }
+    <meta charset="UTF-8">
 
-        h1{
-            color: brown;
-        }
-        a:hover{
-            color: darkblue;
-        }
-        img{
-            width: 300px;
-            border-radius: 10px;
-            border: 2px solid brown;    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        button{
-            background-color: green;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    <title>ProLife Gym</title>
 
-        button:hover{
-            background-color: darkgreen;
-        }
-        p {
-            font-size: 20px;
-        }
-        a{
-            font-weight: bold;
-            text-decoration: underline;
-            color: blue
-        }
-        hr{
-    border: 1px solid brown;
-    width: 80%;
-}
-        .Contact{
-    text-align: right;
-    margin-right: 20px;
-    color:rgb(230, 13, 78)
-}
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <h1>🍔 Tasty Bites Restaurant</h1>
+    <!-- Header -->
 
-    <p>Welcome to Tasty Bites! Enjoy delicious food at affordable prices.</p>
+    <header>
 
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"
-         alt="Restaurant Food">
+        <h2 class="logo">ProLife Gym</h2>
 
-    <h2>📋 Our Menu</h2>
+        <nav>
 
-    <p>🍕 Pizza - ₹199</p>
-    <p>🍔 Burger - ₹149</p>
-    <p>🍟 French Fries - ₹99</p>
-    <p>🥤 Cold Drink - ₹49</p>
+            <a href="#home">Home</a>
 
-    <br>
+            <a href="#about">About</a>
 
-    <a href="https://www.zomato.com" target="_blank">
-        Order Now on Zomato
-    </a>
-    <br><br>
-    <button > OR </button>
-    <br><br>
-    <a href="https://www.swiggy.com" target="_blank">
-        Order Now on Swiggy
-    </a>
-    <br><br>
+            <a href="#programs">Programs</a>
 
-    <button onclick="orderFood()">
-        Order your favorite food now!
-    </button>
-    <h3>Enjoy Your Meal!</h3>
-    <br><br><br>
-    
-    <hr>
-    <div class="Contact">
-    <h4>Contact Us:</h4>
-    <p>📞:123-456-7890</p>
-    <p>✉️:info@tastybites.com</p>
-    </div>
-    <p>"Good Food, Great Mood!" 😋<p>
-<p>© 2026 Tasty Bites Restaurant | All Rights Reserved</p>
-    <script>
-        function orderFood(){
-            alert("Thank you for choosing Tasty Bites! Your order request has been received.");
-        }
-    </script>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+
+        <h1>Transform Your Body</h1>
+
+        <p>Join the best fitness center in our city.</p>
+
+        <button>Join Now</button>
+
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+
+            proLife Gym provides modern equipment,
+
+            experienced trainers and customized workout plans
+
+            to help you achieve your fitness goals.
+
+        </p>
+
+    </section>
+
+    <!-- Programs -->
+
+    <section id="programs">
+
+        <h2>Our Available Programs</h2>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h3>Weight Training</h3>
+
+                <p>Build your muscle & strength.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Cardio</h3>
+
+                <p>Improve stamina & heart health.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Yoga</h3>
+
+                <p>Improve flexibility & relaxation.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>CrossFit</h3>
+
+                <p>High intensity functional workouts.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Zumba</h3>
+
+                <p>Dance fitness sessions.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Personal Training</h3>
+
+                <p>One-to-one coaching.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Workout Planner -->
+
+    <section>
+
+        <h2>Make your Workout Planner</h2>
+
+        <input
+            type="text"
+            id="task"
+            placeholder="Enter today's workout">
+
+        <button onclick="addTask()">
+
+            Add Workout
+
+        </button>
+
+        <ul id="taskList"></ul>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email">
+
+            <textarea
+                id="message"
+                placeholder="Your Message"></textarea>
+
+            <button type="submit">
+
+                Submit
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>
+
+            © 2026 ProLife Gym | All Rights Reserved
+
+        </p>
+
+    </footer>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
